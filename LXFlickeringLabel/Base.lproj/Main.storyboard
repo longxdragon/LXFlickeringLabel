@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide To Unlock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-k8-HgN" customClass="LXFlickeringLabel">
+                                <rect key="frame" x="148" y="273" width="304" height="53"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide To Unlock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keg-lc-3iH" customClass="LXFlickeringLabel">
+                                <rect key="frame" x="148" y="368" width="304" height="53"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide To Unlock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPH-fX-00b" customClass="LXFlickeringLabel">
+                                <rect key="frame" x="148" y="170" width="304" height="53"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="40"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="yPH-fX-00b" secondAttribute="centerX" id="1g1-NA-LLp"/>
+                            <constraint firstAttribute="centerY" secondItem="rdt-k8-HgN" secondAttribute="centerY" id="6lW-bI-NIP"/>
+                            <constraint firstItem="keg-lc-3iH" firstAttribute="top" secondItem="rdt-k8-HgN" secondAttribute="bottom" constant="42" id="bFi-40-IXe"/>
+                            <constraint firstAttribute="centerX" secondItem="keg-lc-3iH" secondAttribute="centerX" id="gTY-fP-cRh"/>
+                            <constraint firstAttribute="centerX" secondItem="rdt-k8-HgN" secondAttribute="centerX" id="lpK-SN-CyO"/>
+                            <constraint firstItem="rdt-k8-HgN" firstAttribute="top" secondItem="yPH-fX-00b" secondAttribute="bottom" constant="50" id="xKw-ZH-cEc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flickeringLabelOne" destination="yPH-fX-00b" id="pEd-Bw-Q4S"/>
+                        <outlet property="flickeringLabelThree" destination="keg-lc-3iH" id="IeT-zg-gLt"/>
+                        <outlet property="flickeringLabelTwo" destination="rdt-k8-HgN" id="Qya-4C-d2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="282"/>
+        </scene>
+    </scenes>
+</document>
