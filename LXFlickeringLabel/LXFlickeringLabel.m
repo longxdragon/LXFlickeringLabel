@@ -47,19 +47,19 @@
 - (void)reloadData
 {
     // 创建CAGradientLayer
-    self.gradientLayer              = [CAGradientLayer layer];
-    self.gradientLayer.frame        = self.bounds;
+    self.gradientLayer = [CAGradientLayer layer];
+    self.gradientLayer.frame = self.bounds;
     
     // 设置梯度颜色
-    self.gradientLayer.colors       = @[(__bridge id)[[UIColor whiteColor] colorWithAlphaComponent:0.5].CGColor,
-                                        (__bridge id)[UIColor whiteColor].CGColor,
-                                        (__bridge id)[[UIColor clearColor] colorWithAlphaComponent:0.5].CGColor];
+    self.gradientLayer.colors = @[(__bridge id)[[UIColor whiteColor] colorWithAlphaComponent:0.5].CGColor,
+                                  (__bridge id)[UIColor whiteColor].CGColor,
+                                  (__bridge id)[[UIColor clearColor] colorWithAlphaComponent:0.5].CGColor];
     // 设置梯度颜色的位置
-    self.gradientLayer.locations    = @[@(0), @(_flickeringGap), @(_flickeringGap*2)];
+    self.gradientLayer.locations = @[@(0), @(_flickeringGap), @(_flickeringGap*2)];
     
     // 这是颜色渐变的方向
-    self.gradientLayer.startPoint   = CGPointMake(0, 0);
-    self.gradientLayer.endPoint     = CGPointMake(1, 0);
+    self.gradientLayer.startPoint = CGPointMake(0, 0);
+    self.gradientLayer.endPoint = CGPointMake(1, 0);
     
     // 设置为mask，iOS8之后，也可以设置self.maskView
     self.layer.mask = self.gradientLayer;
