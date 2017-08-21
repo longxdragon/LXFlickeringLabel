@@ -8,7 +8,7 @@
 
 #import "LXFlickeringLabel.h"
 
-@interface LXFlickeringLabel ()
+@interface LXFlickeringLabel () <CAAnimationDelegate>
 
 @property (nonatomic, strong) CAGradientLayer *gradientLayer;
 
